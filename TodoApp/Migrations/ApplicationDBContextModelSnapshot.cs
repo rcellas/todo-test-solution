@@ -29,6 +29,9 @@ namespace TodoApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("File")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsComplete")
                         .HasColumnType("bit");
 

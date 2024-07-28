@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "TodoApp/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.400",
           "AutoMapper": "13.0.1",
           "Microsoft.AspNetCore.OpenApi": "8.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.6",
@@ -28,6 +29,25 @@
           "lib/net6.0/AutoMapper.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.400": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.0"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.400": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.0"
           }
         }
       },
@@ -1954,6 +1974,20 @@
       "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
       "path": "automapper/13.0.1",
       "hashPath": "automapper.13.0.1.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.400": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qw+WGhxcYtZ6wc1uibOu9XXLsfUpQ1r+gWa0euFnm1e9HowQbcwvKvOqQzwBNqIBO7S5IJ26T9kV/eFiwvZAkQ==",
+      "path": "awssdk.core/3.7.400",
+      "hashPath": "awssdk.core.3.7.400.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.400": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OWCTOIDLd9tisJBigWlws3zXXU8IPc6MGracx0zojB4z0ki7ruL77ZWbj5j9j3zSVvnnLe4uOL/4w2lco/9kBw==",
+      "path": "awssdk.s3/3.7.400",
+      "hashPath": "awssdk.s3.3.7.400.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",

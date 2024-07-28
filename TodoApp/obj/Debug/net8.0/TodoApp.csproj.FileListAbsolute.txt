@@ -253,3 +253,6 @@
 /Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/obj/Debug/net8.0/TodoApp.pdb
 /Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/obj/Debug/net8.0/TodoApp.genruntimeconfig.cache
 /Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/obj/Debug/net8.0/ref/TodoApp.dll
+/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/bin/Debug/net8.0/TodoApp.staticwebassets.runtime.json
+/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/bin/Debug/net8.0/AWSSDK.Core.dll
+/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/bin/Debug/net8.0/AWSSDK.S3.dll

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dZvBA1sWh5ejZZ0o5ipYj/yGLd4Qv+kt+VNEi438q6O1iAmAVRI6vHjyrQGq5vgnSR1+AKWq7OG14bAATST7Yw==",
+  "dgSpecHash": "zRCI3u/G9cLKtbwhfhbtz25trXNTPEHAw1NTIVsbqcdKqx+HpG2MEd9BaEQEwPQqtUK452DObKCqm8Pg+BtnsA==",
   "success": true,
   "projectFilePath": "/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/TodoApp.csproj",
   "expectedPackageFiles": [
     "/Users/bcnmac020/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/bcnmac020/.nuget/packages/awssdk.core/3.7.400/awssdk.core.3.7.400.nupkg.sha512",
+    "/Users/bcnmac020/.nuget/packages/awssdk.s3/3.7.400/awssdk.s3.3.7.400.nupkg.sha512",
     "/Users/bcnmac020/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/bcnmac020/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/bcnmac020/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",

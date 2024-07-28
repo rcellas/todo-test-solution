@@ -5,8 +5,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TodoApp.Repository;
+using TodoApp.Utilities;
+using Amazon.S3;
+using Amazon;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddHttpContextAccessor(); // Add IHttpContextAccessor
 
 // Configuración del servicio de base de datos
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
@@ -14,9 +20,21 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Configurar AWS S3 explícitamente
+builder.Services.AddSingleton<IAmazonS3>(sp =>
+{
+    var config = builder.Configuration.GetSection("AWS");
+    var accessKey = config["AccessKey"];
+    var secretKey = config["SecretKey"];
+    var region = RegionEndpoint.GetBySystemName(config["Region"]);
+    return new AmazonS3Client(accessKey, secretKey, region);
+});
+
 // Agregar servicios de controladores, API Explorer y Swagger
 builder.Services.AddControllers();
 builder.Services.AddScoped<ITodoRepository, TodoRepository>();
+// builder.Services.AddScoped<IFileStorage, S3FileStorage>();
+builder.Services.AddScoped<IFileStorage, LocalFileStorage>();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -30,7 +48,7 @@ builder.Services.AddCors(options =>
             builder.WithOrigins("http://localhost:4200")
                 .AllowAnyMethod()
                 .AllowAnyHeader()
-                .AllowCredentials(); // Esto permite el envío de credenciales (por ejemplo, cookies)
+                .AllowCredentials();
         });
 });
 
@@ -44,7 +62,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseRouting();
 
 // Middleware de CORS
@@ -52,9 +69,6 @@ app.UseCors("AllowLocalhost4200");
 
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
+app.MapControllers();
 
 app.Run();

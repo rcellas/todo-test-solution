@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "Rjx0142JsIjvLUtMGpRHSL0k6gllMFb8zq6bCUamiiA=",
+  "Hash": "Fu9yHKRoT/vI0+zNrzyiSTg4PpidKDzrJmD1OIiRJfg=",
   "Source": "TodoApp",
   "BasePath": "_content/TodoApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoApp/wwwroot",
+      "Source": "TodoApp",
+      "ContentRoot": "/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/wwwroot/",
+      "BasePath": "_content/TodoApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/wwwroot/todos/33cbfd0b-a1e6-4825-9eac-fc96b9cda9d7.png",
+      "SourceId": "TodoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/wwwroot/",
+      "BasePath": "_content/TodoApp",
+      "RelativePath": "todos/33cbfd0b-a1e6-4825-9eac-fc96b9cda9d7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/todos/33cbfd0b-a1e6-4825-9eac-fc96b9cda9d7.png"
+    },
+    {
+      "Identity": "/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/wwwroot/todos/5a691b2a-e8f9-4f8e-8e11-e30dd8d84301.png",
+      "SourceId": "TodoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/bcnmac020/Documents/factoriaf5/bootcamp/p2-singulars/todo-test-solution/TodoApp/wwwroot/",
+      "BasePath": "_content/TodoApp",
+      "RelativePath": "todos/5a691b2a-e8f9-4f8e-8e11-e30dd8d84301.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/todos/5a691b2a-e8f9-4f8e-8e11-e30dd8d84301.png"
+    }
+  ]
 }
