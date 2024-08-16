@@ -22,6 +22,14 @@ Eliminar una tarea:
 
 - Haz clic en el ícono de la papelera para eliminar una tarea.
 
+## Tecnologías
+- **.NET 8**: Framework de desarrollo de aplicaciones web.
+- **Entity Framework Core**: ORM para la gestión de la base de datos.
+- **AutoMapper**: Librería para la conversión de objetos entre capas.
+- **FluentValidation**: Librería para la validación de entradas de usuario.
+- **SQL Server**: Base de datos relacional para almacenar las tareas y las imágenes adjuntas. (Se puede usar otra base de datos si se prefiere).
+
+
 ## Requisitos
 
 - **.NET SDK**: .NET 8.0 o superior
